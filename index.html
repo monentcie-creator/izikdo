@@ -129,129 +129,16 @@ h2 {
 </head>
 <body>
 
-<div class="header">
-  <div class="tabs">
-    <button class="tab-button active" onclick="openTab(event, 'privacy')">Confidentialité</button>
-    <button class="tab-button" onclick="openTab(event, 'delete')">Suppression de compte</button>
-  </div>
-</div>
-<div id="privacy" class="tab-content active">
-  <h1>POLITIQUE DE CONFIDENTIALITÉ – APPLICATION IZIKDO</h1>
-  <p class="date">Applicables à compter du 01/04/2026</p>
-  <p>L’application mobile Izikdo (ci-après « l’Application ») respecte la vie privée des utilisateurs et s’engage à protéger les données personnelles conformément au Règlement Général sur la Protection des Données (RGPD) et à la législation française.</p>
-  
-  <h2>1. Responsable du traitement</h2>
+<h1>Izikdo</h1>
+
   <p>
-  Monent<br>
-  Adresse : 10 rue claire lacombe, 51000 Châlons-en-Champagne<br>
-  E-mail : rgpd@monentcie.com
+    Application de loterie gratuite permettant de gagner des récompenses.
   </p>
-  
-  <h2>2. Données collectées</h2>
-  <p>Les données personnelles collectées peuvent inclure :</p>
+
+  <h2>Liens utiles</h2>
   <ul>
-    <li>Nom et prénom (si fournis)</li>
-    <li>Adresse e-mail</li>
-    <li>Date de naissance ou âge</li>
-    <li>Sexe</li>
-    <li>Adresse IP</li>
-    <li>Données techniques (appareil, OS)</li>
-    <li>Identifiants de compte</li>
-    <li>Données liées à l’utilisation de l’Application (tickets, participation aux tirages, historique des gains)</li>
-    <li>Données de paiement pour les utilisateurs majeurs (via App Store / Google Play)</li>
+    <li><a href="/privacy/">Politique de confidentialité</a></li>
+    <li><a href="/delete/">Suppression de compte</a></li>
   </ul>
-  <p>L’Application ne stocke aucune donnée bancaire, celles-ci sont traitées directement par les plateformes.</p>
-  
-  <h2>3. Finalités du traitement</h2>
-  <ul>
-    <li>La gestion et le fonctionnement de l’Application</li>
-    <li>L’attribution des gains du jeu</li>
-    <li>La prévention et détection de la fraude</li>
-    <li>La communication avec les utilisateurs concernant l’Application et le jeu</li>
-    <li>Le respect des obligations légales</li>
-  </ul>
-  
-  <h2>4. Base légale</h2>
-  <ul>
-    <li>L’exécution d’un contrat (participation au jeu et utilisation de l’Application)</li>
-    <li>Le consentement de l’utilisateur (notifications, marketing)</li>
-    <li>L’intérêt légitime (fraude, sécurité)</li>
-  </ul>
-  
-  <h2>5. Destinataires des données</h2>
-  <ul>
-    <li>Prestataires techniques (hébergement, maintenance)</li>
-    <li>Plateformes de paiement (App Store / Google Play)</li>
-    <li>Autorités compétentes en cas d’obligation légale</li>
-  </ul>
-  
-  <h2>6. Durée de conservation</h2>
-  <p>
-  Les données sont conservées pendant toute la durée de l’inscription et supprimées dans un délai de 1 an après la clôture du compte, sauf obligation légale contraire.
-  </p>
-  
-  <h2>7. Droits des utilisateurs</h2>
-  <ul>
-    <li>Droit d’accès</li>
-    <li>Droit de rectification</li>
-    <li>Droit à l’effacement</li>
-    <li>Droit à la limitation</li>
-    <li>Droit d’opposition</li>
-    <li>Droit à la portabilité</li>
-  </ul>
-  <p>Contact : rgpd@monentcie.com</p>
-  
-  <h2>8. Sécurité des données</h2>
-  <p>
-  Des mesures techniques et organisationnelles sont mises en place pour protéger les données contre tout accès non autorisé.
-  </p>
-  
-  <h2>9. Transfert hors UE</h2>
-  <p>
-  Les données ne sont pas transférées hors UE, sauf via des services conformes aux normes de protection.
-  </p>
-  
-  <h2>10. Cookies et traceurs</h2>
-  <p>
-  L’Application peut utiliser des traceurs pour son fonctionnement et son analyse. Les préférences sont gérables dans l’Application.
-  </p>
-  
-  <h2>11. Modifications</h2>
-  <p>
-  Cette politique peut être modifiée à tout moment. Les utilisateurs seront informés via l’Application.
-  </p>
-  
-  <h2>12. Droit applicable</h2>
-  <p>
-  Soumise au droit français. Litiges devant les juridictions compétentes.
-  </p>
-</div>
-  
-<div id="delete" class="tab-content">
-    <h2>Suppression de compte</h2>
-
-    <p>Vous pouvez supprimer votre compte de deux façons :</p>
-
-    <ul>
-      <li>Directement depuis l’application</li>
-      <li>Ou en envoyant un email à : rgpd@monentcie.com</li>
-    </ul>
-
-    <p>Toutes les données associées seront supprimées sous 7 jours.</p>
-  </div>
-  
-
-<script>
-  function openTab(event, tabId) {
-  const contents = document.querySelectorAll(".tab-content");
-  const buttons = document.querySelectorAll(".tab-button");
-
-  contents.forEach(c => c.classList.remove("active"));
-  buttons.forEach(b => b.classList.remove("active"));
-
-  document.getElementById(tabId).classList.add("active");
-  event.currentTarget.classList.add("active");
-}
-</script>
 </body>
 </html>
