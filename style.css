@@ -1,28 +1,30 @@
 /* ============ Izikdo — feuille de style commune ============ */
 
 :root {
-  --bg: #f6f4fb;
+  --bg: #f7f5f0;
   --surface: #ffffff;
-  --text: #1f1b2e;
-  --muted: #6b6580;
-  --border: #e6e1f2;
-  --primary: #6d28d9;
-  --primary-soft: #efe7fd;
-  --accent: #f59e0b;
-  --shadow: 0 10px 30px rgba(60, 30, 120, 0.08);
+  --text: #17150f;
+  --muted: #6b665a;
+  --border: #e8e3d6;
+  --primary: #a87a12;
+  --primary-soft: #f6edd6;
+  --accent: #d4a62a;
+  --on-primary: #ffffff;
+  --shadow: 0 10px 30px rgba(40, 30, 0, 0.08);
   --radius: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #12101a;
-    --surface: #1c1928;
-    --text: #ece9f5;
-    --muted: #a39dbb;
-    --border: #2e2a40;
-    --primary: #a78bfa;
-    --primary-soft: #2a2242;
-    --accent: #fbbf24;
+    --bg: #0e0e0d;
+    --surface: #181816;
+    --text: #f1ede3;
+    --muted: #a8a293;
+    --border: #2c2a25;
+    --primary: #e0b54a;
+    --primary-soft: #2a2416;
+    --accent: #e0b54a;
+    --on-primary: #17150f;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   }
 }
@@ -80,12 +82,8 @@ a:hover { text-decoration: underline; }
 .brand-logo {
   width: 36px;
   height: 36px;
-  border-radius: 10px;
-  display: grid;
-  place-items: center;
-  color: #fff;
-  font-size: 1.1rem;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: 9px;
+  display: block;
 }
 
 .tabs {
@@ -109,7 +107,7 @@ a:hover { text-decoration: underline; }
 }
 .tab-button.active {
   background: var(--primary);
-  color: #fff;
+  color: var(--on-primary);
 }
 
 /* ---------- Contenu ---------- */
@@ -203,16 +201,12 @@ li::marker { color: var(--primary); }
   padding: 40px 20px 50px;
 }
 .hero-logo {
-  width: 88px;
-  height: 88px;
-  margin: 0 auto 20px;
-  border-radius: 24px;
-  display: grid;
-  place-items: center;
-  font-size: 2.6rem;
-  color: #fff;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  box-shadow: var(--shadow);
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 24px;
+  display: block;
+  border-radius: 28px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
 }
 .hero h1 { font-size: clamp(2.2rem, 7vw, 3.2rem); }
 .hero p {
@@ -287,7 +281,7 @@ li::marker { color: var(--primary); }
   height: 30px;
   border-radius: 50%;
   background: var(--primary);
-  color: #fff;
+  color: var(--on-primary);
   font-weight: 700;
   font-size: 0.9rem;
   margin-bottom: 10px;
