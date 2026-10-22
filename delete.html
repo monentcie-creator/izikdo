@@ -3,30 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Izikdo</title>
+  <title>Suppression de compte – Izikdo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
- <div class="header">
-  <div class="tabs">
-      <a href="privacy.html" class="tab-button">Politique de confidentialité</a>
-      <a href="delete.html" class="tab-button active">Suppression de compte</a>
-  </div>
-</div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand"><span class="brand-logo">🎁</span>Izikdo</a>
+      <nav class="tabs">
+        <a href="index.html" class="tab-button">Accueil</a>
+        <a href="privacy.html" class="tab-button">Politique de confidentialité</a>
+        <a href="delete.html" class="tab-button active">Suppression de compte</a>
+      </nav>
+    </div>
+  </header>
 
-<div id="delete">
-    <h2>Suppression de compte</h2>
+  <main>
+    <div class="card" id="delete">
+      <h1>Suppression de compte</h1>
+      <p class="intro">Vous pouvez supprimer votre compte de deux façons :</p>
 
-    <p>Vous pouvez supprimer votre compte de deux façons :</p>
+      <ul class="options">
+        <li class="option">
+          <span class="option-num">1</span>
+          <p>Directement depuis l’application</p>
+        </li>
+        <li class="option">
+          <span class="option-num">2</span>
+          <p>Ou en envoyant un email à :<br><a href="mailto:rgpd@monentcie.com?subject=Suppression%20de%20compte%20Izikdo">rgpd@monentcie.com</a></p>
+        </li>
+      </ul>
 
-    <ul>
-      <li>Directement depuis l’application</li>
-      <li>Ou en envoyant un email à : rgpd@monentcie.com</li>
-    </ul>
+      <div class="notice">
+        <span>⏱️</span>
+        <p>Toutes les données associées seront supprimées sous 7 jours.</p>
+      </div>
+    </div>
+  </main>
 
-    <p>Toutes les données associées seront supprimées sous 7 jours.</p>
-  </div>
-  
+  <footer class="site-footer">
+    © 2026 Izikdo · <a href="mailto:rgpd@monentcie.com">rgpd@monentcie.com</a>
+  </footer>
+
 </body>
 </html>

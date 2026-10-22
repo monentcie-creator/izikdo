@@ -4,20 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Izikdo</title>
+  <meta name="description" content="Izikdo, application de loterie gratuite permettant de gagner des récompenses.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Izikdo</h1>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand"><span class="brand-logo">🎁</span>Izikdo</a>
+      <nav class="tabs">
+        <a href="index.html" class="tab-button active">Accueil</a>
+        <a href="privacy.html" class="tab-button">Politique de confidentialité</a>
+        <a href="delete.html" class="tab-button">Suppression de compte</a>
+      </nav>
+    </div>
+  </header>
 
-  <p>
-    Application de loterie gratuite permettant de gagner des récompenses.
-  </p>
+  <main>
+    <section class="hero">
+      <div class="hero-logo">🎁</div>
+      <h1>Izikdo</h1>
+      <p>Application de loterie gratuite permettant de gagner des récompenses.</p>
+    </section>
 
-  <h2>Liens utiles</h2>
-  <ul>
-    <li><a href="privacy.html">Politique de confidentialité</a></li>
-    <li><a href="delete.html">Suppression de compte</a></li>
-  </ul>
+    <h2 class="section-title">Liens utiles</h2>
+    <div class="links-grid">
+      <a href="privacy.html" class="link-card">
+        <div class="icon">🔒</div>
+        <h3>Politique de confidentialité</h3>
+        <p>Comment vos données sont collectées et protégées. <span class="arrow">→</span></p>
+      </a>
+      <a href="delete.html" class="link-card">
+        <div class="icon">🗑️</div>
+        <h3>Suppression de compte</h3>
+        <p>Supprimer votre compte et les données associées. <span class="arrow">→</span></p>
+      </a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    © 2026 Izikdo · <a href="mailto:rgpd@monentcie.com">rgpd@monentcie.com</a>
+  </footer>
+
 </body>
 </html>
