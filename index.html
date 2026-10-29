@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monent – Applications mobiles</title>
-  <meta name="description" content="Monent, micro-entreprise de création d'applications et de jeux mobiles.">
+  <title>Monent – Applications & jeux mobiles</title>
+  <meta name="description" content="Monent, micro-entreprise de création d'applications et de jeux mobiles : Izikdo, Scridle.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="theme-monent">
+<body class="theme-monent home">
 
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="brand"><span class="brand-mark">M</span>Monent</a>
+      <a href="index.html" class="brand"><img src="favicon.svg" alt="" class="brand-logo">Monent</a>
       <nav class="tabs">
         <a href="index.html" class="tab-button active">Accueil</a>
         <a href="#applications" class="tab-button">Applications</a>
@@ -24,56 +25,99 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="monent-mark">M</div>
-      <h1>Monent</h1>
-      <p>Micro-entreprise indépendante qui conçoit, développe et publie des applications et des jeux mobiles.</p>
-    </section>
-
-    <div class="about">
-      <div class="about-item">
-        <h3>📱 Applications mobiles</h3>
-        <p>Des applications et des jeux pour Android et iOS, pensés pour être simples et agréables.</p>
+  <section class="home-hero">
+    <div class="home-hero-inner">
+      <div>
+        <p class="eyebrow">Studio indépendant · Châlons-en-Champagne</p>
+        <h1>Des applications mobiles <em>simples</em>, utiles et ludiques.</h1>
+        <p class="lead">Monent conçoit, développe et publie ses propres applications et jeux pour smartphone, de l'idée jusqu'au Play Store.</p>
+        <div class="hero-actions">
+          <a href="#applications" class="btn btn-light">Découvrir nos applications</a>
+          <a href="#contact" class="btn btn-ghost">Nous contacter</a>
+        </div>
       </div>
-      <div class="about-item">
-        <h3>🛠️ De l'idée à la publication</h3>
+      <div class="hero-visual" aria-hidden="true">
+        <img src="logo-monent.png" alt="" class="main-logo">
+        <img src="scridle/logo-web.png" alt="" class="float-1">
+        <img src="izikdo/logo-web.png" alt="" class="float-2">
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="values">
+      <div class="value">
+        <div class="icon">📱</div>
+        <h3>Pensé pour le mobile</h3>
+        <p>Des applications et des jeux rapides et agréables, conçus d'abord pour le smartphone.</p>
+      </div>
+      <div class="value">
+        <div class="icon">🛠️</div>
+        <h3>De l'idée à la publication</h3>
         <p>Conception, développement, mise en ligne sur les stores et suivi de chaque application.</p>
       </div>
-      <div class="about-item">
-        <h3>🔒 Respect de vos données</h3>
-        <p>Chaque application a sa politique de confidentialité et une procédure de suppression de compte.</p>
+      <div class="value">
+        <div class="icon">🔒</div>
+        <h3>Respect de vos données</h3>
+        <p>Chaque application a sa politique de confidentialité et une procédure simple de suppression de compte.</p>
       </div>
     </div>
 
-    <h2 class="section-title" id="applications">Nos applications</h2>
-    <div class="links-grid">
-      <a href="izikdo/" class="app-card">
-        <img src="izikdo/logo-web.png" alt="Logo Izikdo">
-        <div>
-          <h3>Izikdo</h3>
-          <p>Application de loterie gratuite permettant de gagner des récompenses.</p>
-          <span class="tag">Voir l'application →</span>
-        </div>
-      </a>
-      <a href="scridle/" class="app-card">
-        <img src="scridle/logo-web.png" alt="Logo Scridle">
-        <div>
-          <h3>Scridle</h3>
-          <p>Jeu mobile : faites grandir votre planète, gagnez des abonnés et défiez les autres joueurs.</p>
-          <span class="tag">Voir l'application →</span>
-        </div>
-      </a>
+    <div class="section-head" id="applications">
+      <h2>Nos applications</h2>
+      <p>Retrouvez chaque application, sa politique de confidentialité et la suppression de compte.</p>
     </div>
 
-    <section class="legal card" id="contact">
-      <h2>Contact et mentions légales</h2>
-      <p><strong>Monent</strong> – Entreprise individuelle (micro-entrepreneur)</p>
-      <p>Responsable de la publication : Yann Gousset</p>
-      <p>Adresse : 10 rue Claire Lacombe, 51000 Châlons-en-Champagne</p>
-      <!-- <p>SIRET : à compléter</p> -->
-      <p>E-mail : <a href="mailto:rgpd@monentcie.com">rgpd@monentcie.com</a></p>
-      <p>Hébergement : GitHub Pages – GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</p>
+    <div class="apps">
+      <article class="app-card">
+        <div class="app-card-head">
+          <img src="izikdo/logo-web.png" alt="Logo Izikdo">
+          <div>
+            <h3>Izikdo</h3>
+            <span class="chip">Loterie gratuite</span>
+          </div>
+        </div>
+        <p>Application de loterie gratuite permettant de gagner des récompenses.</p>
+        <div class="app-card-links">
+          <a href="izikdo/" class="btn">Voir l'application</a>
+          <a href="izikdo/privacy.html">Confidentialité</a>
+          <a href="izikdo/delete.html">Suppression</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-card-head">
+          <img src="scridle/logo-web.png" alt="Logo Scridle">
+          <div>
+            <h3>Scridle</h3>
+            <span class="chip">Jeu</span>
+          </div>
+        </div>
+        <p>Faites grandir votre planète, gagnez des abonnés et défiez les autres joueurs.</p>
+        <div class="app-card-links">
+          <a href="scridle/" class="btn">Voir l'application</a>
+          <a href="scridle/privacy.html">Confidentialité</a>
+          <a href="scridle/delete.html">Suppression</a>
+        </div>
+      </article>
+    </div>
+
+    <section class="contact" id="contact">
+      <div class="contact-cta">
+        <h2>Une question ?</h2>
+        <p>Une remarque sur une application, une demande liée à vos données ou une proposition : écrivez-nous, nous répondons rapidement.</p>
+        <a href="mailto:rgpd@monentcie.com" class="btn btn-light">✉️ rgpd@monentcie.com</a>
+      </div>
+      <div class="legal">
+        <h3>Mentions légales</h3>
+        <dl>
+          <dt>Éditeur</dt><dd>Monent – Yann Gousset, entrepreneur individuel (micro-entreprise)</dd>
+          <dt>Adresse</dt><dd>10 rue Claire Lacombe, 51000 Châlons-en-Champagne</dd>
+          <!-- <dt>SIRET</dt><dd>à compléter</dd> -->
+          <dt>Publication</dt><dd>Yann Gousset</dd>
+          <dt>Hébergeur</dt><dd>GitHub Pages – GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</dd>
+        </dl>
+      </div>
     </section>
   </main>
 
