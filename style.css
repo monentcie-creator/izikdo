@@ -1,4 +1,4 @@
-/* ============ Izikdo — feuille de style commune ============ */
+/* ============ Monent — feuille de style commune (accueil + applications) ============ */
 
 :root {
   --bg: #f7f5f0;
@@ -26,6 +26,44 @@
     --accent: #e0b54a;
     --on-primary: #17150f;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* ---------- Thèmes : couleur d'accent par page ---------- */
+/* Izikdo garde les couleurs par défaut ci-dessus. */
+.theme-monent {
+  --bg: #f5f6f8;
+  --border: #e2e5ea;
+  --primary: #2f5d8a;
+  --primary-soft: #e3ecf5;
+  --accent: #4a86c0;
+  --shadow: 0 10px 30px rgba(10, 30, 60, 0.08);
+}
+.theme-scridle {
+  --bg: #f6f4fb;
+  --border: #e6e0f3;
+  --primary: #6a3fd6;
+  --primary-soft: #ece5fb;
+  --accent: #f0a83a;
+  --shadow: 0 10px 30px rgba(40, 10, 90, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme-monent {
+    --bg: #0d0f12;
+    --border: #262b33;
+    --primary: #7fb0e0;
+    --primary-soft: #18222e;
+    --accent: #7fb0e0;
+    --on-primary: #0d0f12;
+  }
+  .theme-scridle {
+    --bg: #0f0d16;
+    --border: #2b2640;
+    --primary: #a98bff;
+    --primary-soft: #221b3a;
+    --accent: #f0a83a;
+    --on-primary: #0f0d16;
   }
 }
 
@@ -300,6 +338,117 @@ li::marker { color: var(--primary); }
 }
 .notice p { margin: 0; }
 
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  background: var(--primary);
+  color: var(--on-primary);
+}
+.btn:hover { text-decoration: none; opacity: 0.9; }
+
+.muted { color: var(--muted); font-size: 0.92rem; }
+
+code {
+  font-size: 0.9em;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: var(--primary-soft);
+}
+
+/* ---------- Tableau de données (confidentialité) ---------- */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  margin: 12px 0;
+}
+.data-table th,
+.data-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.data-table th { background: var(--primary-soft); color: var(--primary); }
+
+/* ---------- Accueil Monent ---------- */
+.monent-mark {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 26px;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--on-primary);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  box-shadow: var(--shadow);
+}
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: var(--on-primary);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 0 0 56px;
+}
+.about-item {
+  padding: 22px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.about-item h3 { margin: 0 0 6px; font-size: 1rem; }
+.about-item p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+.app-card {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 22px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  color: var(--text);
+  transition: transform 0.2s, border-color 0.2s;
+}
+.app-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary);
+  text-decoration: none;
+}
+.app-card img {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: 18px;
+}
+.app-card h3 { margin: 0 0 4px; font-size: 1.15rem; }
+.app-card p { margin: 0; color: var(--muted); font-size: 0.93rem; line-height: 1.5; }
+.app-card .tag {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.legal { margin-top: 56px; font-size: 0.92rem; }
+.legal p { margin: 4px 0; color: var(--muted); }
+
 /* ---------- Pied de page ---------- */
 .site-footer {
   border-top: 1px solid var(--border);
@@ -319,4 +468,10 @@ li::marker { color: var(--primary); }
   main { padding: 24px 16px 40px; }
   .card { padding: 24px 20px; }
   .toc ol { columns: 1; }
+  .data-table, .data-table thead, .data-table tbody,
+  .data-table tr, .data-table th, .data-table td { display: block; }
+  .data-table thead { display: none; }
+  .data-table td { border: none; padding: 2px 0; }
+  .data-table tr { border-bottom: 1px solid var(--border); padding: 10px 0; }
+  .data-table td:first-child { font-weight: 700; }
 }

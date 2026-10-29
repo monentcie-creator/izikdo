@@ -3,52 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Izikdo</title>
-  <meta name="description" content="Izikdo, application de loterie gratuite permettant de gagner des récompenses.">
+  <title>Monent – Applications mobiles</title>
+  <meta name="description" content="Monent, micro-entreprise de création d'applications et de jeux mobiles.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="apple-touch-icon" href="logo-web.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="theme-monent">
 
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="brand"><img src="logo-web.png" alt="" class="brand-logo">Izikdo</a>
+      <a href="index.html" class="brand"><span class="brand-mark">M</span>Monent</a>
       <nav class="tabs">
         <a href="index.html" class="tab-button active">Accueil</a>
-        <a href="privacy.html" class="tab-button">Politique de confidentialité</a>
-        <a href="delete.html" class="tab-button">Suppression de compte</a>
+        <a href="#applications" class="tab-button">Applications</a>
+        <a href="#contact" class="tab-button">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <img src="logo-web.png" alt="Logo Izikdo" class="hero-logo">
-      <h1>Izikdo</h1>
-      <p>Application de loterie gratuite permettant de gagner des récompenses.</p>
+      <div class="monent-mark">M</div>
+      <h1>Monent</h1>
+      <p>Micro-entreprise indépendante qui conçoit, développe et publie des applications et des jeux mobiles.</p>
     </section>
 
-    <h2 class="section-title">Liens utiles</h2>
+    <div class="about">
+      <div class="about-item">
+        <h3>📱 Applications mobiles</h3>
+        <p>Des applications et des jeux pour Android et iOS, pensés pour être simples et agréables.</p>
+      </div>
+      <div class="about-item">
+        <h3>🛠️ De l'idée à la publication</h3>
+        <p>Conception, développement, mise en ligne sur les stores et suivi de chaque application.</p>
+      </div>
+      <div class="about-item">
+        <h3>🔒 Respect de vos données</h3>
+        <p>Chaque application a sa politique de confidentialité et une procédure de suppression de compte.</p>
+      </div>
+    </div>
+
+    <h2 class="section-title" id="applications">Nos applications</h2>
     <div class="links-grid">
-      <a href="privacy.html" class="link-card">
-        <div class="icon">🔒</div>
-        <h3>Politique de confidentialité</h3>
-        <p>Comment vos données sont collectées et protégées. <span class="arrow">→</span></p>
+      <a href="izikdo/" class="app-card">
+        <img src="izikdo/logo-web.png" alt="Logo Izikdo">
+        <div>
+          <h3>Izikdo</h3>
+          <p>Application de loterie gratuite permettant de gagner des récompenses.</p>
+          <span class="tag">Voir l'application →</span>
+        </div>
       </a>
-      <a href="delete.html" class="link-card">
-        <div class="icon">🗑️</div>
-        <h3>Suppression de compte</h3>
-        <p>Supprimer votre compte et les données associées. <span class="arrow">→</span></p>
+      <a href="scridle/" class="app-card">
+        <img src="scridle/logo-web.png" alt="Logo Scridle">
+        <div>
+          <h3>Scridle</h3>
+          <p>Jeu mobile : faites grandir votre planète, gagnez des abonnés et défiez les autres joueurs.</p>
+          <span class="tag">Voir l'application →</span>
+        </div>
       </a>
     </div>
+
+    <section class="legal card" id="contact">
+      <h2>Contact et mentions légales</h2>
+      <p><strong>Monent</strong> – Entreprise individuelle (micro-entrepreneur)</p>
+      <p>Responsable de la publication : Yann Gousset</p>
+      <p>Adresse : 10 rue Claire Lacombe, 51000 Châlons-en-Champagne</p>
+      <!-- <p>SIRET : à compléter</p> -->
+      <p>E-mail : <a href="mailto:rgpd@monentcie.com">rgpd@monentcie.com</a></p>
+      <p>Hébergement : GitHub Pages – GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</p>
+    </section>
   </main>
 
   <footer class="site-footer">
-    © 2026 Izikdo · <a href="mailto:rgpd@monentcie.com">rgpd@monentcie.com</a>
+    © 2026 Monent · <a href="mailto:rgpd@monentcie.com">rgpd@monentcie.com</a>
   </footer>
 
 </body>
