@@ -39,6 +39,14 @@
   --accent: #4a86c0;
   --shadow: 0 10px 30px rgba(10, 30, 60, 0.08);
 }
+.theme-devinebebe {
+  --bg: #fffbf7;
+  --border: #f0e4ea;
+  --primary: #d2537e;
+  --primary-soft: #ffe3ec;
+  --accent: #7ec8f2;
+  --shadow: 0 10px 30px rgba(90, 20, 50, 0.08);
+}
 .theme-scridle {
   --bg: #f6f4fb;
   --border: #e6e0f3;
@@ -56,6 +64,14 @@
     --primary-soft: #18222e;
     --accent: #7fb0e0;
     --on-primary: #0d0f12;
+  }
+  .theme-devinebebe {
+    --bg: #140e11;
+    --border: #3a2830;
+    --primary: #ff8fb1;
+    --primary-soft: #2e1a22;
+    --accent: #7ec8f2;
+    --on-primary: #140e11;
   }
   .theme-scridle {
     --bg: #0f0d16;
