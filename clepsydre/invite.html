@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ton ami t'invite à jouer à Clepsydre</title>
+  <meta name="description" content="Ton ami t'invite à jouer à Clepsydre, l'escape game chronométré : 21 salles de mini-jeux, en solo ou en ligne.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Ton ami t'invite à jouer à Clepsydre">
+  <meta property="og:description" content="L'escape game chronométré : 21 salles de mini-jeux, en solo ou en ligne, avant que la clepsydre ne se vide.">
+  <meta property="og:image" content="https://monentcie.com/clepsydre/logo-web.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logo-web.png">
+  <link rel="apple-touch-icon" href="logo-web.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-clepsydre">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand"><img src="logo-web.png" alt="" class="brand-logo">Clepsydre</a>
+      <nav class="tabs">
+        <a href="../" class="tab-button" data-fr="← Toutes les applications" data-en="← All apps">← Toutes les applications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="logo-web.png" alt="Logo Clepsydre" class="hero-logo">
+      <h1 data-fr="Ton ami t'invite à jouer à Clepsydre" data-en="Your friend invites you to play Clepsydre">Ton ami t'invite à jouer à Clepsydre</h1>
+      <p data-fr="L'escape game chronométré : 21 salles de mini-jeux, en solo ou en ligne, avant que la clepsydre ne se vide." data-en="The timed escape game: 21 mini-game rooms, solo or online, before the water clock runs dry.">L'escape game chronométré : 21 salles de mini-jeux, en solo ou en ligne, avant que la clepsydre ne se vide.</p>
+      <div class="hero-actions" style="justify-content:center;margin-top:28px">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.monentcie.clepsydre" data-fr="▶ Google Play" data-en="▶ Google Play">▶ Google Play</a>
+        <span class="btn" style="opacity:.55;cursor:default" aria-disabled="true" data-fr="App Store · bientôt" data-en="App Store · coming soon">App Store · bientôt</span>
+      </div>
+      <p class="muted" style="margin-top:24px" data-fr="Déjà installé ? Ouvre ce lien depuis ton téléphone : il lance directement le jeu." data-en="Already installed? Open this link on your phone: it launches the game directly.">Déjà installé ? Ouvre ce lien depuis ton téléphone : il lance directement le jeu.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span data-fr="© 2026 Clepsydre, une application" data-en="© 2026 Clepsydre, a">© 2026 Clepsydre, une application</span> <a href="../">Monent</a> <span data-fr="" data-en="app"></span> · <a href="index.html" data-fr="Confidentialité, CGU et règlement" data-en="Privacy, terms and rules">Confidentialité, CGU et règlement</a>
+  </footer>
+
+  <script>
+    (function () {
+      var lang = (navigator.language || "fr").slice(0, 2).toLowerCase();
+      if (lang === "fr") return;
+      document.documentElement.lang = "en";
+      document.title = "Your friend invites you to play Clepsydre";
+      document.querySelectorAll("[data-en]").forEach(function (el) { el.textContent = el.getAttribute("data-en"); });
+      var home = document.querySelector('.site-footer a[href="index.html"]');
+      if (home) home.setAttribute("href", "index-en.html");
+    })();
+  </script>
+
+</body>
+</html>
