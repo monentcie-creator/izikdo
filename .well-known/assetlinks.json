@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.monentcie.clepsydre",
+      "sha256_cert_fingerprints": [
+        "4B:54:D0:5B:69:A8:B1:7B:9F:48:CF:E9:F1:D4:9D:CF:12:66:5C:7B:B8:7F:0B:E5:E3:E7:54:D2:4F:93:DB:0A"
+      ]
+    }
+  }
+]
